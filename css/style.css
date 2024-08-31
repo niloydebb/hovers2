@@ -1,0 +1,155 @@
+.container{
+    width:1200px;
+    margin: 50px auto;
+   
+}
+.img{
+  width:100%;
+}
+img{
+    width:100%;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+}
+.items .single,.single2,.single3{
+    /* justify-content: space; */
+    text-align: center;
+    width: 30%;
+    border: 2px solid blue;
+    position: relative;
+
+}
+
+
+
+.items .single2 ul{
+    /* justify-content: space; */
+   
+   
+    list-style: none;
+    background-color: aquamarine;
+    width: 0%;
+    height: 10vh;
+     top: 80px;
+    padding: 15px 0;
+    transition:all .5s ease 0s;
+    
+
+    position: absolute;
+
+}
+
+.items .single2 ul li{
+    display: none;
+    transition:all .5s ease 0s;
+
+}
+.items .single2:hover ul{
+ width: 20%;
+
+
+}
+.items .single2:hover ul li{
+    
+    display: block;
+   
+   }
+
+
+
+.items .single::before{
+    width:100%;
+    position:absolute;
+    left:0;
+    content:"";
+    height:40%;
+    /* top:0; */
+    bottom: 0;
+    transition:all .5s ease 0s;
+    background-color: rgba(248, 145, 145, 0.568);
+    z-index: 1;
+    
+
+}
+
+.items .single3::before{
+    width:100%;
+    position:absolute;
+    left:0;
+    content:"";
+    height:40%;
+    /* top:0; */
+    bottom: 0;
+    transition:all .5s ease 0s;
+    background-color: rgba(248, 145, 145, 0.568);
+    z-index: 1;
+    
+
+
+}
+.items .single3:hover::before{
+    height: 100%;
+   background-color:rgba(248, 145, 145, 0.568);
+
+}
+.items .single3 .content h2, .social{
+    transition:all .5s ease 0s;
+}
+
+/* .items .single3 .content h2{
+    transition:all .5s ease 0s;
+} */
+
+
+.items .single3:hover .content h2{
+    transform: translateY(-220px);
+}
+
+.items .single3:hover .social{
+    transform: translateY(-215px);
+}
+
+
+
+.items .single .content{
+    position: relative;
+   z-index: 3;
+    
+
+}
+
+.items .single3 .content{
+    position: relative;
+   z-index: 3;
+    
+
+}
+.items .single:hover::before{
+    height: 100%;
+   background-color:rgba(248, 145, 145, 0.568);
+
+}
+
+
+.items .single,.single2,.single3 .social {
+    list-style-type: none;
+}
+
+.items .single3 .social li{
+    display: inline-block;
+}
+
+.items .icons ul li a i{
+    font-size: 50px !important;
+}
+
+.items .icon ul li{
+   /* display: flex;
+   justify-content: space-between; */
+   /* padding-left: 0px; */
+   float: left;
+}
+
